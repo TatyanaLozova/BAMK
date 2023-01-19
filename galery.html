@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header>
+      <div class="conteiner-a flexbox">
+        <nav class="site-nav">
+          <a href="/index.html" class="logo"
+            ><span class="logo-part">
+              <img src="./images/bamk/logo.webp"  width="100%" />
+            </span></a
+          >
+
+          <ul class="menu-list">
+            <li><a href="index.html" class="menu-link active-link">About us</a></li>
+            <li><a href="portfolio.html" class="menu-link">Reviews</a></li>
+            <li><a href="#" class="menu-link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <ul class="menu-contact">
+          <li>
+               <a class="menu-item " href="mailto:info@devstudio.com"
+              >
+              <svg class="icon-mail"  width="16" height="12">
+                <use href="./images/дз4/sprite.svg#icon-envelope"></use>
+              </svg>info@helpukrainebamk.uk              </a>
+            
+          </li>
+          <li>
+            <a class="menu-item" href="tel:+380961111111">
+              <svg class="icon-smartphone"  width="10" height="15">
+                <use href="./images/дз4/sprite.svg#icon-smartphone"></use>
+              </svg>+44 11 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--название-->
+    <main>
+ 
+
+
+      <!--Особенности-->
+
+      <section class="features">
+        <div class="conteiner">
+          <!--<h2 class="hidden">Особенности</h2>-->
+          <ul class="section">
+            <!-- В этот список добавляй элементы галереи -->
+    <ul class="gallery js-gallery"></ul>
+
+    <!--
+      Модальное окно для полноразмерного изображения
+      Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
+    -->
+    <div class="lightbox js-lightbox">
+        <div class="lightbox__overlay"></div>
+
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="" alt="" />
+        </div>
+
+        <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+    </div>
+
+    <script src="js/gallery-items.js" type="module"></script>
+    <script src="js/gallery.js" type="module"></script>
+          </ul>
+        </div>
+      </section>
+      
+
+    </main>
+    <!--Подвал-->
+    <footer class="footer">
+      <div class="conteiner">
+        <div class="footer-blok">
+          <p>
+            <a href="/index.html" class="logo-footer"
+              ><span class="logo-footerpart">Web</span>Studio</a
+            >
+          </p>
+          <address class="address">
+            <a href="#"class="contacts">г. Киев, пр-т Леси Украинки, 26</a>
+            <a class="contacts-item" href="mailto:info@example.com">info@example.com</a>
+            <a class="contacts-item" href="tel:+380991111111">+38 099 111 11 11</a>
+               
+          </address>
+        </div>
+        <div class="footer-blok">
+          <p class="heder-social">присоединяйтесь</p>
+          <ul class="footer-social block-padding">
+            <li class="link-items">
+              <a href="#" class="soc-footer">
+                <svg class="icon-soc-footer"  width="20" height="20" >
+                  <use href="./images/дз4/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link-items">
+              <a href="#" class="soc-footer">
+                <svg class="icon-soc-footer"  width="20" height="20" >
+                  <use href="./images/дз4/sprite.svg#icon-tvitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link-items">
+              <a href="" class="soc-footer">
+                <svg class="icon-soc-footer"  width="20" height="20" >
+                  <use href="./images/дз4/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link-items">
+              <a href="" class="soc-footer">
+                <svg class="icon-soc-footer"  width="20" height="20" >
+                  <use href="./images/дз4/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-blok">
+          <p class="aside">Подпишитесь на рассылку</p>   
+          <form class="button-form" >                
+            <div class="form-field-footer">
+              <label class="label-footer" for="mail"></label>                
+              <input class="input-footer" name="mail" placeholder="E-mail" id="mail" type="email">                                  
+            </div>
+            <button class="button fly">Подписаться</button>
+            </form>
+
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
