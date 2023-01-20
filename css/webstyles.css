@@ -31,14 +31,7 @@ background:var(--main-bg-color);
 /*--Шапка сайта--*/
 
 .logo{
-font-family: "Raleway", sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-text-decoration: none;
-color: var(--main-txt-color);
+
 padding-top: 25px;
 padding-bottom: 25px;
 margin-right: 80px;
@@ -131,7 +124,7 @@ margin-right: 35px;
 font-style: normal;
 text-decoration: none;
 font-weight: 500;
-font-size: 14px;
+font-size: 20px;
 line-height: 1.14px;
 letter-spacing: 0.02em; 
 
@@ -225,6 +218,7 @@ color: var(--features-bg-color);
 /*h2*/
 
 .subtitle {
+  text-transform: uppercase;
 font-style: normal;
 font-weight: bold;
 font-size: 36px;

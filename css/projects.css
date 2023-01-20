@@ -1,38 +1,146 @@
 
-/*домашнее задание 4*/
+
 /*контакты в шапке*/
 
 a {
   text-decoration:none;
-  color: #000 
+  color: rgb(37, 2, 213) 
 }
 
-.menu-item {
-  color: #0c34d6;
- fill:  #0c34d6;
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+
 }
+/*--Шапка сайта--*/
 
-.menu-item:focus,
-.menu-item:hover {
- color:  #2196f3;
- fill:  #2196f3;
-}
+.logo{
 
-
- .icon-mail {
- margin-right: 10px;
- width: 16px;
- height: 12px;
- fill: currentColor;
- }
-
-
- .icon-smartphone{
- margin-right: 10px;
- width: 10px;
- height: 15px;
- fill: currentColor;
- }
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 80px;
+  }
+  
+  .site-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    letter-spacing: 0.02em;
+  
+  }
+  .conteiner-a {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  }
+  
+  .flexbox {
+  display: flex;
+  
+  }
+  
+  .menu-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #130cce;
+   
+  
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  
+  .menu-link:focus,
+  .menu-link:hover {
+    color:  #e00808;
+    fill:  #eb1717;
+  
+  }
+  .menu-link:focus,
+  .menu-link:hover {
+    color:var(--accent-color);
+  
+    }
+  .menu-list {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+  
+    .menu-list li {
+     
+  margin-right: 35px;
+  
+    }
+  
+    .menu-contact{
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    /* display: flex; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+    .menu-contact li {
+    padding-top: 45px;
+    /* padding-bottom: 30px; */
+  /*outline: 2px solid #2196f3;*/
+   /* margin-right: 30px; */
+    }
+  
+  .menu-item {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em; 
+  
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  .menu-contact li:nth-child(2n+0){
+    margin-right: 0;
+  }
+  
+  .menu-item {
+    color: #1848e8;
+  
+  }
+  
+  .menu-item:focus,
+  .menu-item:hover {
+   color:  #2196f3;
+   fill:  #2196f3;
+  }
+  
+   .icon-mail {
+   margin-right: 10px;
+   width: 16px;
+   height: 12px;
+   fill: currentColor;
+   }
+  
+   .icon-smartphone{
+   margin-right: 10px;
+   width: 10px;
+   height: 15px;
+   fill: currentColor;
+   }
 
 
 /*Портфолио*/
@@ -148,9 +256,9 @@ h3 {
 .flex-nav li + li {
  margin-left: 50px;
 }
-.flex-nav li {
+/* .flex-nav li {
 /*outline: 2px solid #2196f3;*/
-}
+/* } */ */
 
 /* 
   .menu-items {
@@ -166,13 +274,7 @@ h3 {
   
   }
   
- /*.menu-main{
-   display: flex;
-   list-style: none;
- }
-  .menu-main li + li {
- margin-left: 30px;
-}
+ 
 
 
 /*<!--Флекс оформление-->*/
@@ -227,6 +329,12 @@ h3 {
   margin-right: 0;
 }
 /*футер*/
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  }
 .footer {
   background-image:    
     url(../images/bamk/10.webp);
@@ -315,50 +423,7 @@ border-top: 1px solid#ECECEC;
 
 }*/
 
-.logo{
-font-family: "Raleway", sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-text-decoration: none;
-margin-bottom: 0px;
-margin-top: 0px;
-}
-.logo-part {
-  color: var(--accent-color);
-}
 
-.menu-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  
-  position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-/* синяя полоска актив
-.active-link::after {
-  display: flex;  
-  content: "";
-  top: 40px;
-  left: 0px;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background: #2196f3;
-  transform: translateY(34px);
-
-} */
 
 .menu-list {
   list-style: none;
@@ -488,98 +553,128 @@ color: var(--part-txt-color);
 
 
 .footer{
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-
-} 
-
-.logo-footer{
-font-family: "Raleway", sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-text-decoration: none;
-color:var(--part-txt-color)
-}
-.logo-footerpart {
-  color: var(--accent-color);
-}
-
-.contacts {
-font-style: normal;
-color:var(--part-txt-color);
-}
-
-.contacts-item {
-  display: block;
-  text-decoration: none;
-    list-style: none;
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
-  /*margin-top: 9px;*/
-}
-
-.heder-social{
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--part-txt-color);
-
-}
-
-.aside {
-font-weight: bold;
-line-height: 1.14;
-text-transform: uppercase;
-color: var(--part-txt-color);
-}
-
-.button {
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  display: inline-block;
-  letter-spacing: 0.06em;
-  color: var(--part-txt-color);
-  background: var(--accent-bg-color);
-  width: 200px;
-  height: 50px;
-  border: transparent;
-  border-radius: 4px;
-  padding: 10px 32px;
+  background-image:    
+  url(../images/bamk/10.webp);
  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  padding-top: 30px;
+  
+  
+  
+}
+  
+  .logo-footer{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color:var(--part-txt-color);
+  
+  }
+  .logo-footerpart {
+    color: var(--accent-color);
+  }
+  .footer-block > a.logo {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 0;
+  }
 
+.address {
+     margin-top: 20px;
+    list-style: none;
+  color: var(--part-txt-color);
+  list-style: none;
+    padding: 0;
+}
+.block-padding{
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.input-footer{
+.address .contacts {
+  color: var(--part-txt-color);
+  list-style: none;
+  padding: 0;
+}
+  .contacts {
+  font-style: normal;
+  color: var(--part-txt-color);
+  text-decoration: none;
+  }
   
-  box-sizing: border-box;
-  width: 358px;
-  height: 50px;
-  padding: 12px 0px 12px 16px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 12px;
-   
+  .contacts-item {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
+  }
 
-  }
-  .button-form{
+  .footer > .conteiner {
     display: flex;
-    justify-content: center;
-    border: none;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: space-between;
+  }
+  .footer-block >.heder-social{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 14px;
   }
   
+  .footer-social  {
+    display: flex;
+     list-style: none;
+  
+  }
+  .link-items:not(:last-child) {
+      margin-right: 10px;
+    }
+
+  .heder-social{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--part-txt-color);
+  }
+  
+.soc-footer {
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  border-radius: 50%;
+}
+
+.soc-footer:hover,
+.soc-footer:focus {
+background-color: var(--accent-color);
+transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+  .aside {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color:var(--part-txt-color);
+  }

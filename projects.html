@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="./css/projects.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link
@@ -13,44 +13,42 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header class="container-heder">
-      <div class="main-nav">
-        <nav class="nav">
-          <p>
-            <a href="/index.html" class="logo"
+    <header>
+      <div class="conteiner-a flexbox">
+        <nav class="site-nav">
+          <a href="/index.html" class="logo"
             ><span class="logo-part">
-              <img src="./images/bamk/logo.webp"  width="100%" />
+              <img src="./images/bamk/logo4.jpg"  width="300" height="150"  />
             </span></a
           >
-          </p>
-          <ul class="menu-items flex-nav">
+
+          <ul class="menu-list">
             <li><a href="index.html" class="menu-link active-link">About </a></li>
             <li><a href="projects.html" class="menu-link">Projects</a></li>
             <li><a href="galery.html" class="menu-link">Galery</a></li>
+            <!-- <li><a href="#" class="menu-link">Contacts</a></li> -->
+            <li><a href="donate.html" class="menu-link">DONATE</a></li>
           </ul>
         </nav>
-        <ul class="menu-items">
-          <li>
-            <a class="menu-item " href="mailto:info@helpukrainebamk.uk "
-           >
-           <svg class="icon-mail"  width="16" height="12">
-             <use href="./images/дз4/sprite.svg#icon-envelope"></use>
-           </svg>info@helpukrainebamk.uk 
-           </a>
-         
-       </li>
-       <li>
-         <a class="menu-item" href="tel:+380961111111">
-           <svg class="icon-smartphone"  width="10" height="15">
-             <use href="./images/дз4/sprite.svg#icon-smartphone"></use>
-           </svg>+44 11 111 11 11
-         </a>
-       </li>
 
+        <ul class="menu-contact">
+          <li>
+               <a class="menu-item " href="mailto:info@helpukrainebamk.uk "
+              >
+              <svg class="icon-mail"  width="16" height="12">
+                <use href="./images/дз4/sprite.svg#icon-envelope"></use>
+              </svg>info@helpukrainebamk.uk              </a>
+            
+          </li>
+          <li>
+            <a class="menu-item" href="tel:+380961111111">
+              <svg class="icon-smartphone"  width="10" height="15">
+                <use href="./images/дз4/sprite.svg#icon-smartphone"></use>
+              </svg>+44 795 165 87 49
+            </a>
+          </li>
         </ul>
-        
       </div>
-      
     </header>
    
     <main>
@@ -290,67 +288,57 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <div class="container">
-            <div class="footer-blok">
-              <p>
-                <a href="/index.html" class="logo"
-            ><span class="logo-part">
-              <img src="./images/bamk/logo2.png"  width="150" />
-            </span></a
-          ></p>
-              <address class="address">
+      <div class="conteiner">
+        <div class="footer-blok">
+          <p>
+            <a href="/index.html" class="logo-footer"
+              ><span class="logo-part">
+                <img src="./images/bamk/logo2.png"  width="150" />
+              </span></a
+            >
+          </p>
+          
+        </div>
+        <div class="footer-blok">
+          <p class="heder-social">JOIN IN</p>
+          <ul class="footer-social block-padding">
+            
+            <li class="link-items">
+              <a href="#" class="soc-footer">
+                <svg class="icon-soc-footer"  width="20" height="20" >
+                  <use href="./images/дз4/sprite.svg#icon-tvitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link-items">
+              <a href="" class="soc-footer">
+                <svg class="icon-soc-footer"  width="20" height="20" >
+                  <use href="./images/дз4/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          
+          </ul>
+        </div>
+        <div>
+          <address class="address">
+            <a href="#"class="contacts">Unit 50 Tanners Drive, </br>Blakelands.  MK14 5BW</a>
+            <a class="contacts-item" href="mailto:info@example.com">info@helpukrainebamk.uk</a>
+            <a class="contacts-item" href="tel:44 795 165 87 49">+44 795 165 87 49</a>
                
-                  <!-- <a href=""class="contacts">г. Киев, пр-т Леси Украинки, 26</a>
-                  <a class="contacts-item" href="mailto:info@example.com">info@example.com</a>
-                  <a class="contacts-item" href="tel:+380991111111">+38 099 111 11 11</a> -->
-               
-              </address>
+          </address>
+        </div>
+        <!-- <div class="footer-blok">
+          <p class="aside">Подпишитесь на рассылку</p>   
+          <form class="button-form" >                
+            <div class="form-field-footer">
+              <label class="label-footer" for="mail"></label>                
+              <input class="input-footer" name="mail" placeholder="E-mail" id="mail" type="email">                                  
             </div>
-            <div class="footer-blok">
-              <p class="heder-social">Join in</p>
-              <ul class="footer-social block-padding">
-                <li class="link-items">
-                  <a href="#" class="soc-footer">
-                    <svg class="icon-soc-footer"  width="20" height="20" >
-                      <use href="./images/дз4/sprite.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="link-items">
-                  <a href="#" class="soc-footer">
-                    <svg class="icon-soc-footer"  width="20" height="20" >
-                      <use href="./images/дз4/sprite.svg#icon-tvitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="link-items">
-                  <a href="" class="soc-footer">
-                    <svg class="icon-soc-footer"  width="20" height="20" >
-                      <use href="./images/дз4/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="link-items">
-                  <a href="" class="soc-footer">
-                    <svg class="icon-soc-footer"  width="20" height="20" >
-                      <use href="./images/дз4/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- <div class="footer-blok"> -->
-              <!-- <p class="aside">write to us</p>   
-              <form class="button-form" >                
-                <div class="form-field-footer">
-                  <label class="label-footer" for="mail"></label>                
-                  <input class="input-footer" name="mail" placeholder="E-mail" id="mail" type="email">                                  
-                </div>
-                <button class="button fly">Подписаться</button> -->
-                <!-- </form> -->
-    
-          </div>
-      </div>   
+            <button class="button fly">Подписаться</button>
+            </form> -->
+
+      </div>
     </footer>
   </body>
 </html>
