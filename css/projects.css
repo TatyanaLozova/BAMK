@@ -318,14 +318,14 @@ h3 {
 .container-li {
   display: block;
  margin-right: 30px;
-  width: calc((100% - 60px) / 3); 
+  width: calc((100% - 60px) / 2); 
 }
-  .container-li:nth-last-child(-n + 3) {
+  .container-li:nth-last-child(-n + 2) {
     margin-bottom: 0;  
    
 }
 
-.container-li:nth-child(3n+0) {
+.container-li:nth-child(2n+0) {
   margin-right: 0;
 }
 /*футер*/
