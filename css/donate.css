@@ -28,7 +28,11 @@ letter-spacing: 0.03em;
 background:var(--main-bg-color);
 
 }
+h1:focus,
+h1:hover {
+ color:  #0e35e2;
 
+}
 
 
 /* ------------------------------------------- */
