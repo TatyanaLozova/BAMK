@@ -146,35 +146,6 @@ body {
 
 
 
-:root {
-  --main-txt-color: #212121;
-  --part-txt-color: #ffffff;
- --accent-color: #2196f3;
- --accent-bg-color: #2196f3;
- --main-bg-color: #ffffff;
- --sec-txt-color: #757575;
- --features-bg-color: #f5f4fa;
- --footer-bg-color: #2f303a;
- }
-html {
- box-sizing: border-box;
-}
-*,
-*::before,
-*::after{
- box-sizing: inherit;
-}
-
-body {
-font-family: "Roboto", sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-background:var(--main-bg-color);
-
-}
 
 /*--Шапка сайта--*/
 
@@ -913,17 +884,6 @@ border-radius: 4px;
     cursor: pointer;
 }
 
-/* .active-link::after {
-  display: flex;
-  content: "";
-  left: 0px;
-  top: 40px;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background: #2196f3;
-  transform: translateY(32px);
-} */
 
 .form-block{
 padding: 40px;
@@ -1014,11 +974,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 
-/*.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}*/
+
 
 .modal-form .checkbox-label {
   
